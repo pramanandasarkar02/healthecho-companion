@@ -3,9 +3,8 @@ package com.healthecho.patient_profile_service.dtos;
 import lombok.Data;
 
 @Data
-public class PatientResponse {
-    private String ID;
-    private String fullName;
+public class PatientDTO {
+    private String firstName;
     private String lastName;
     private Double age;
 }

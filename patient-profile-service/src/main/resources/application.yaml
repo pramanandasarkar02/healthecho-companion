@@ -3,12 +3,18 @@ spring:
     name: patient-profile-service
 
   datasource:
-    url: jdbc:postgresql://patient-profile-db:5432/patient-profile-db
+    url: jdbc:postgresql://localhost:5432/patient-profile-db
     username: user
     password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-    database: POSTGRESQL
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
