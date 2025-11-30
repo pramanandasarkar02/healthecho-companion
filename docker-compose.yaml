@@ -12,6 +12,19 @@ services:
       - pgdata:/var/lib/postgresql/data
     networks:
       - patient-network
+  patient-activity-db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: patient-activity-db
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - patient-network
 
 volumes:
   pgdata:
