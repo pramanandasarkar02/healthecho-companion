@@ -3,15 +3,16 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for patient_activity_service" enabled="true">
+      <profile name="Annotation profile for media_processing_service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
-        <module name="patient_activity_service" />
+        <module name="media_processing_service" />
         <module name="auth-service" />
+        <module name="patient_activity_service" />
         <module name="patient-profile-service" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth-service" options="-parameters" />
+      <module name="media_processing_service" options="-parameters" />
       <module name="patient-profile-service" options="-parameters" />
       <module name="patient_activity_service" options="-parameters" />
     </option>
