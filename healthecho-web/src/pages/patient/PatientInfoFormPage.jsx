@@ -2,7 +2,12 @@ import React from 'react'
 
 const PatientInformationFromPage = () => {
   return (
-    <div>PatientInformationFromPage</div>
+    <div>
+      
+
+
+
+    </div>
   )
 }
 
