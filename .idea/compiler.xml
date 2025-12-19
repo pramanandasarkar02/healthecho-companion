@@ -9,35 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
-        <module name="embedding-service" />
-        <module name="config-server" />
-        <module name="auth-service" />
-        <module name="health-service" />
-        <module name="api-gateway" />
-        <module name="analytics-service" />
         <module name="user-service" />
-        <module name="ai-model-service" />
-        <module name="rag-service" />
-        <module name="file-service" />
-        <module name="eureka-server" />
-        <module name="notification-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ai-model-service" options="-parameters" />
-      <module name="analytics-service" options="-parameters" />
-      <module name="api-gateway" options="-parameters" />
-      <module name="auth-service" options="-parameters" />
-      <module name="config-server" options="-parameters" />
-      <module name="embedding-service" options="-parameters" />
-      <module name="eureka-server" options="-parameters" />
-      <module name="file-service" options="-parameters" />
-      <module name="health-service" options="-parameters" />
-      <module name="notification-service" options="-parameters" />
-      <module name="rag-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

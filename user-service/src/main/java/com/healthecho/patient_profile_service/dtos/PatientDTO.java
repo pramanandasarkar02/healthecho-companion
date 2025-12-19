@@ -6,5 +6,5 @@ import lombok.Data;
 public class PatientDTO {
     private String firstName;
     private String lastName;
-    private Double age;
+    private String location;
 }
